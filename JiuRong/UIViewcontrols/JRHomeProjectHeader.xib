@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JRHomeProjectHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oml-2w-3r5">
+                    <rect key="frame" x="15" y="13" width="5" height="20"/>
+                    <color key="backgroundColor" red="0.78574934549999997" green="0.079223421850000003" blue="0.15901899659999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="5" id="KRs-lG-X2E"/>
+                        <constraint firstAttribute="height" constant="20" id="X6U-Si-i53"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="久融生活" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0O-Fw-OG9">
+                    <rect key="frame" x="27" y="13" width="71" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="71" id="jhh-bE-8pM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更多" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlI-Rf-42n">
+                    <rect key="frame" x="259" y="14" width="71" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="71" id="SuL-aJ-mPY"/>
+                        <constraint firstAttribute="width" constant="71" id="Ugu-QK-KcU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GlI-Rf-42n" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="0bo-6o-yjU"/>
+                <constraint firstItem="X0O-Fw-OG9" firstAttribute="leading" secondItem="oml-2w-3r5" secondAttribute="trailing" constant="7" id="P6B-VB-eAy"/>
+                <constraint firstItem="X0O-Fw-OG9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PHd-6d-fFh"/>
+                <constraint firstAttribute="trailing" secondItem="GlI-Rf-42n" secondAttribute="trailing" constant="45" id="asC-69-v5b"/>
+                <constraint firstItem="oml-2w-3r5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="jl8-RF-RhO"/>
+                <constraint firstItem="oml-2w-3r5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yfc-IT-Hyg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="line" destination="oml-2w-3r5" id="sIC-Zp-bSb"/>
+                <outlet property="projectTypeTitle" destination="X0O-Fw-OG9" id="lYK-uz-3hq"/>
+            </connections>
+            <point key="canvasLocation" x="232.5" y="327.5"/>
+        </view>
+    </objects>
+</document>

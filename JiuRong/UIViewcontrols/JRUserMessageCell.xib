@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="JRUserMessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEO-AW-vSf">
+                        <rect key="frame" x="28" y="8" width="337" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nZm-7e-YEW">
+                        <rect key="frame" x="19" y="17" width="5" height="5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="51P-32-ZGn"/>
+                            <constraint firstAttribute="width" constant="5" id="gzG-S9-8XV"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tEO-AW-vSf" firstAttribute="leading" secondItem="nZm-7e-YEW" secondAttribute="trailing" constant="4" id="1vP-Ue-iI4"/>
+                    <constraint firstItem="nZm-7e-YEW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="2mX-zZ-8Yb"/>
+                    <constraint firstItem="nZm-7e-YEW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-2.5" id="94A-mx-3cH"/>
+                    <constraint firstAttribute="trailing" secondItem="tEO-AW-vSf" secondAttribute="trailing" constant="10" id="Eq8-YP-PLJ"/>
+                    <constraint firstItem="tEO-AW-vSf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Rcg-H2-INl"/>
+                    <constraint firstItem="tEO-AW-vSf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="b2b-bs-iHc"/>
+                    <constraint firstAttribute="bottom" secondItem="tEO-AW-vSf" secondAttribute="bottom" constant="9" id="yyZ-IR-d0H"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="notiStatusImage" destination="nZm-7e-YEW" id="Col-zn-PRY"/>
+                <outlet property="word" destination="tEO-AW-vSf" id="7zR-lE-5up"/>
+            </connections>
+            <point key="canvasLocation" x="399.5" y="355.5"/>
+        </tableViewCell>
+    </objects>
+</document>
